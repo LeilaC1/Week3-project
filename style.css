@@ -1,0 +1,40 @@
+.hero-img {
+    background-image: url(images/8ecae6.png);
+    border: outset;
+}
+
+.row {
+    color: white;
+
+    padding: 20px;
+
+}
+
+    {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    column-count: 2;
+    display: block;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-sizing: border-box;
+    float: left;
+    margin-right: 30px;
+    display: flex;
+    padding: 10px;
+ 
+}
+.container {
+    padding: 25px;
+}
