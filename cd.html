@@ -45,3 +45,69 @@
 
 
     </header>
+    <main>
+        <section class="container" style= "padding-left: 20%; " id="cal3">
+            <div class="row">
+                <div class="col">
+                    <h1>CD Calculator</h1>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center">
+                <div class="col-sm-2">
+                  <label for="inputDeposit" class="col-form-label">Deposit Amount</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="inputDeposit" class="form-control" aria-describedby="inputDepositHelp">
+                </div>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-sm-2">
+                  <label for="inputTerm" class="col-form-label">CD Term Length</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="inputTerm" class="form-control" aria-describedby="inputTermHelp">
+                </div>
+              </div>
+              <div class="row g-3 align-items-center">
+                <div class="col-sm-2">
+                  <label for="inputInterest2" class="col-form-label">Interest Rate</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="inputInterest2" class="form-control" aria-describedby="inputInterest2Help">
+                </div>
+              </div>
+              <!--buttons-->
+              <div style="padding-left: 31%;">
+                <input class="btn btn-primary" id="calculateBtn2" type="button" value="Calculate"/>
+                </div>
+        </section>
+    
+    
+              <!--output-->
+              <section>
+    <div class="container" id="cal4" style= "padding-left: 20%;">
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label  for="answerField3" class="col-form-label">Total Interest Earned</label>
+            </div>
+            <div class="col-auto">
+              <input type="output1" id="answerField3" readonly class="form-control" aria-describedby="answerField3Help">
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label  for="answerField4" class="col-form-label">Total Balance </label>
+            </div>
+            <div class="col-auto">
+              <input type="output2" id="answerField4" class="form-control" aria-describedby="answerField4Help">
+            </div>
+          </div>
+    
+    
+        </div>
+    </section>
+    
+
+    </main>
+</body>
+</html>
