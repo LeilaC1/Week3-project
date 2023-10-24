@@ -21,11 +21,6 @@
     display: block;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .card {
     box-sizing: border-box;

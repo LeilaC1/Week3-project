@@ -2,127 +2,128 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Week 3 - Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Week 3 - Project</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">Covert and Calculate</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="cd.html">Future Value of CD</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="annuity.html">Present Value of Ordinary
-                                Annuity</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="mortage.html">Mortgage Calculator</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="temp.html">Temperature Coverter</a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-    </header>
-    <main>
-    <section class="container" style= "padding-left: 20%; " id="cal">
-        <div class="row">
-            <div class="col">
-                <h1>Mortgage Calculator</h1>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">Covert and Calculate</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="cd.html">Future Value of CD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="annuity.html">Present Value of Ordinary
+                Annuity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="mortage.html">Mortgage Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="temp.html">Temperature Coverter</a>
+            </li>
+            </li>
+          </ul>
         </div>
-        <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-              <label for="inputInterest" class="col-form-label">Interest Rate</label>
-            </div>
-            <div class="col-auto">
-              <input type="number" id="inputInterest" class="form-control" aria-describedby="inputInterestHelp">
-            </div>
-            <div class="col-auto">
-              <span id="inputInterestHelp" class="form-text">
-                Input Interest Rate
-              </span>
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-              <label for="inputLoan" class="col-form-label">Loan Legnth</label>
-            </div>
-            <div class="col-auto">
-              <input type="number" id="inputLoan" class="form-control" aria-describedby="inputLoanHelp">
-            </div>
-            <div class="col-auto">
-              <span id="inputLoanHelp" class="form-text">
-                Input Loan Legnth in Months
-              </span>
-            </div>
-          </div>
-          <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-              <label for="inputPrincipal" class="col-form-label">Principal</label>
-            </div>
-            <div class="col-auto">
-              <input type="number" id="inputPrincipal" class="form-control" aria-describedby="inputPrincipalHelp">
-            </div>
-            <div class="col-auto">
-              <span id="inputPrincipalHelp" class="form-text">
-               Amount you want to borrow
-              </span>
-            </div>
-          </div>
-          <!--buttons-->
-          <div style="padding-left: 31%;">
-            <input class="btn btn-primary" id="calculateBtn" type="button" value="Calculate"/>
-            </div>
-    </section>
+      </div>
+    </nav>
 
 
-          <!--output-->
-          <section>
-<div class="container" id="cal2" style= "padding-left: 20%;">
-    <div class="row g-3 align-items-center">
+  </header>
+  <main>
+    <div class="container" style="padding-left: 20%; " id="cal">
+      <div class="row">
+        <div class="col">
+          <h1>Mortgage Calculator</h1>
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
         <div class="col-sm-2">
-          <label  for="answerField1" class="col-form-label">Monthly Due</label>
+          <label for="inputInterest" class="col-form-label">Interest Rate</label>
         </div>
         <div class="col-auto">
-          <input type="output1" id="answerField1" readonly class="form-control" aria-describedby="answerField1Help">
+          <input type="text" id="inputInterest" class="form-control" aria-describedby="inputInterestHelp">
         </div>
         <div class="col-auto">
-          <span id="answerField1Help" class="form-text">
-         Amount due monthly
+          <span id="inputInterestHelp" class="form-text">
+            Input Interest Rate
           </span>
         </div>
       </div>
       <div class="row g-3 align-items-center">
         <div class="col-sm-2">
-          <label  for="answerField2" class="col-form-label">Total Amount </label>
+          <label for="inputLoan" class="col-form-label">Loan Legnth</label>
         </div>
         <div class="col-auto">
-          <input type="output2" id="answerField2" class="form-control" aria-describedby="answerField2Help">
+          <input type="text" id="inputLoan" class="form-control" aria-describedby="inputLoanHelp">
         </div>
         <div class="col-auto">
-          <span id="answerField2Help" class="form-text">
+          <span id="inputLoanHelp" class="form-text">
+            Input Loan Legnth in Months
+          </span>
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label for="inputPrincipal" class="col-form-label">Principal</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="inputPrincipal" class="form-control" aria-describedby="inputPrincipalHelp">
+        </div>
+        <div class="col-auto">
+          <span id="inputPrincipalHelp" class="form-text">
+            Amount you want to borrow
+          </span>
+        </div>
+      </div>
+      <!--buttons-->
+      <div style="padding-left: 31%;">
+        <input class="btn btn-primary" id="calculateBtn" type="button" value="Calculate" />
+      </div>
+    </div>
+
+
+    <!--output-->
+    <div class="container" id="cal2" style="padding-left: 20%;">
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label class="col-form-label" for="monthlyDue">Monthly Due</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="monthlyDue" readonly class="form-control" aria-describedby="monthlyDueHelp">
+        </div>
+        <div class="col-auto">
+          <span id="monthlyDueHelp" class="form-text">
+            Amount due monthly
+          </span>
+        </div>
+      </div>
+
+
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label for="total" class="col-form-label">Total Amount </label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="total" class="form-control" aria-describedby="totalHelp">
+        </div>
+        <div class="col-auto">
+          <span id="totalHelp" class="form-text">
             Total Amount to completely pay the loan
           </span>
         </div>
@@ -130,25 +131,25 @@
 
 
     </div>
-</section>
-
-
-
-
-    </main>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="scripts/mortage.js"></script>
 
 
 
 
 
+  </main>
 
-</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="scripts/mortage.js"></script>
+
+
+
+
+
+
+  </main>
 
 
 
@@ -157,4 +158,5 @@
 
 
 </body>
+
 </html>
