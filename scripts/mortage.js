@@ -6,26 +6,31 @@ window.onload = init;
 function init(){
     console.log("start init")
     const calculateBtn = document.getElementById("calculateBtn");
-    calculateBtn.onclick = calculateBtnClicked;
+    calculateBtn.onclick = onCalculateBtnClicked;
 }
 
 
-    function calculateBtnClicked (){
+    function onCalculateBtnClicked(){
         console.log("btn clicked");
         const inputInterest = document.getElementById("inputInterest");
         const inputLoan = document.getElementById("inputLoan");
         const inputPrincipal = document.getElementById("inputPrincipal");
-let interest = Number(inputInterest);
-let loanLength = Number(inputLoan);
-let principal = Number(inputPrincipal);
+        const monthlyDue = document.getElementById("monthlyDue");
+        const total = document.getElementById("total");
+
+
+let yearlyInterest = Number(inputInterest.value);
+let yearlyLoanLength = Number(inputLoan.value);
+let principal = Number(inputPrincipal.value);
+let monthlyInterest = yearlyInterest / 100 / 12;
+let monthlyLoanLegnth = yearlyInterest * 12;
 
 // calculation, formula - M=P*i/1-(1=i)^-l
 
-let monthlyDueValue = principal * ((interest) / 1 - (1 + interest) ** -loanLength);
-const monthlyDue = document.getElementById("monthlyDue");
-monthlyDue.value = monthlyDueValue;
-let totalValue = (monthlyDue * loanLength) - principal;
-const total = document.getElementById("total");
-total.value = totalValue;
-console.log(total.value + monthlyDue.value);
+let monthlyDueValue = principal * (monthlyInterest) / (1 - (1 + monthlyInterest) ** -monthlyLoanLegnth);
+
+let totalValue = (monthlyDueValue * monthlyLoanLegnth) - principal; 
+
+total.value = totalValue.toFixed(2);
+monthlyDue.value = monthlyDueValue.toFixed(2);
 }
