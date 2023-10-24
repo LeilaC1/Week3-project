@@ -4,7 +4,7 @@
 }
 
 .row {
-    color: white;
+;
 
     padding: 20px;
 
@@ -37,4 +37,14 @@
 }
 .container {
     padding: 25px;
+}
+#cal {
+    border: solid gray 2px;
+    background-color: #8ecae6 ;
+}
+#calculateBtn {
+}
+#cal2 {
+    border: solid gray 2px;
+    background-color: #219ebc ;
 }

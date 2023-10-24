@@ -45,3 +45,115 @@
 
 
     </header>
+    <main>
+    <section class="container" style= "padding-left: 20%; " id="cal">
+        <div class="row">
+            <div class="col">
+                <h1>Mortgage Calculator</h1>
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label for="inputInterest" class="col-form-label">Interest Rate</label>
+            </div>
+            <div class="col-auto">
+              <input type="number" id="inputInterest" class="form-control" aria-describedby="inputInterestHelp">
+            </div>
+            <div class="col-auto">
+              <span id="inputInterestHelp" class="form-text">
+                Input Interest Rate
+              </span>
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label for="inputLoan" class="col-form-label">Loan Legnth</label>
+            </div>
+            <div class="col-auto">
+              <input type="number" id="inputLoan" class="form-control" aria-describedby="inputLoanHelp">
+            </div>
+            <div class="col-auto">
+              <span id="inputLoanHelp" class="form-text">
+                Input Loan Legnth in Months
+              </span>
+            </div>
+          </div>
+          <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label for="inputPrincipal" class="col-form-label">Principal</label>
+            </div>
+            <div class="col-auto">
+              <input type="number" id="inputPrincipal" class="form-control" aria-describedby="inputPrincipalHelp">
+            </div>
+            <div class="col-auto">
+              <span id="inputPrincipalHelp" class="form-text">
+               Amount you want to borrow
+              </span>
+            </div>
+          </div>
+          <!--buttons-->
+          <div style="padding-left: 31%;">
+            <input class="btn btn-primary" id="calculateBtn" type="button" value="Calculate"/>
+            </div>
+    </section>
+
+
+          <!--output-->
+          <section>
+<div class="container" id="cal2" style= "padding-left: 20%;">
+    <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label  for="answerField1" class="col-form-label">Monthly Due</label>
+        </div>
+        <div class="col-auto">
+          <input type="output1" id="answerField1" readonly class="form-control" aria-describedby="answerField1Help">
+        </div>
+        <div class="col-auto">
+          <span id="answerField1Help" class="form-text">
+         Amount due monthly
+          </span>
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label  for="answerField2" class="col-form-label">Total Amount </label>
+        </div>
+        <div class="col-auto">
+          <input type="output2" id="answerField2" class="form-control" aria-describedby="answerField2Help">
+        </div>
+        <div class="col-auto">
+          <span id="answerField2Help" class="form-text">
+            Total Amount to completely pay the loan
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+</section>
+</div>
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="scripts/mortage.js"></script>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+</body>
