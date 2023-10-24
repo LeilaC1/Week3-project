@@ -45,3 +45,70 @@
 
 
     </header>
+
+    <main>
+        <section class="container" style= "padding-left: 20%; " id="cal3">
+            <div class="row">
+                <div class="col">
+                    <h1>CD Calculator</h1>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center">
+                <div class="col-sm-1">
+                  <label for="inputFahrenheit" class="col-form-label">Fahrenheit</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="inputFahrenheit" class="form-control" aria-describedby="inputFahrenheitHelp">
+                </div>
+                <div class="col-sm-1">
+                  <label for="inputCelsius" class="col-form-label">Celsius</label>
+                </div>
+                <div class="col-auto">
+                  <input type="number" id="inputCelsius" class="form-control" aria-describedby="inputCelsiusHelp">
+                </div>
+              </div>
+            
+              <!--buttons-->
+              <div style="padding-left: 56%;">
+                <input class="btn btn-primary" id="convertBtn" type="button" value="Convert"/>
+                </div>
+        </section>
+    
+    
+              <!--output-->
+              <section>
+    <div class="container" id="cal4" style= "padding-left: 20%;">
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-2">
+              <label  for="answerField5" class="col-form-label"> </label>
+            </div>
+            <div class="col-auto">
+              <output type="output1" id="answerField5" readonly class="form-control">Fahrenheit :</output>
+            </div>
+            <div class="col-auto">
+                <output type="output2" id="answerField6" readonly class="form-control">Celsius :</output>
+              </div>
+          </div>
+          <div style="padding-left: 33%;">
+            <input class="btn btn-primary" id="resetBtn" type="button" value="Reset"/>
+            </div>
+    
+        
+    </section>
+    
+
+    </main>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
