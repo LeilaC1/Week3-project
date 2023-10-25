@@ -21,7 +21,7 @@ function onCalculateBtn2Clicked() {
 
     // calculation, formula - A=P(1+R/N)**(n*t)
 
-    let outputAnswerField3 = deposit * (interest2/100) * term;
+    let outputAnswerField3 = deposit * (interest2/100) * term ;
 
     let outputAnswerField4 = deposit * (1 + (interest2/100)/365) **(365 *term);
 
