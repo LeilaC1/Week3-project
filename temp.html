@@ -47,7 +47,7 @@
     </header>
 
     <main>
-        <section class="container" style= "padding-left: 20%; " id="cal3">
+        <div class="container" style="padding-left: 15%; " id="converter">
             <div class="row">
                 <div class="col">
                     <h1>CD Calculator</h1>
@@ -55,46 +55,61 @@
             </div>
             <div class="row g-3 align-items-center">
                 <div class="col-sm-1">
-                  <label for="inputFahrenheit" class="col-form-label">Fahrenheit</label>
+                    <label for="inputFahrenheit" class="col-form-label">Fahrenheit</label>
                 </div>
                 <div class="col-auto">
-                  <input type="number" id="inputFahrenheit" class="form-control" aria-describedby="inputFahrenheitHelp">
+                    <input type="number" id="inputFahrenheit" class="form-control"
+                        aria-describedby="inputFahrenheitHelp">
                 </div>
                 <div class="col-sm-1">
-                  <label for="inputCelsius" class="col-form-label">Celsius</label>
+                    <label for="inputCelsius" class="col-form-label">Celsius</label>
                 </div>
                 <div class="col-auto">
-                  <input type="number" id="inputCelsius" class="form-control" aria-describedby="inputCelsiusHelp">
+                    <input type="number" id="inputCelsius" class="form-control" aria-describedby="inputCelsiusHelp">
                 </div>
-              </div>
+            </div>
+
+            <!--buttons-->
             
-              <!--buttons-->
-              <div style="padding-left: 56%;">
-                <input class="btn btn-primary" id="convertBtn" type="button" value="Convert"/>
+            <div style="padding-left: 30%;">
+                <input class="btn btn-primary" id="convertFBtn" type="button" value="Convert to Celsius" />
+                <input class="btn btn-primary" id="convertCBtn" type="button" value="Convert to Fahrenheit" />
+            </div>
+        </div>
+
+
+        <!--output-->
+
+        <div class="container" id="converterOutput" style="padding-left: 15%; padding-bottom: 5%; padding-top: 3%;">
+            <div class="row g-3 align-items-center">
+                <div class="col-sm-1">
+                    <label for="answerField5" class="col-form-label">Celsius  </label>
                 </div>
-        </section>
+                <div class="col-auto">
+                    <input type="number" id="answerField5" readonly class="form-control">
+                </div>
+                <div class="col-sm-1">
+                <label for="answerField5" class="col-form-label"> Fahrenheit</label>
+                </div>
+                <div class="col-auto">
+                    <input type="number" id="answerField6" readonly class="form-control">
+                </div>
+            </div>
+
+
+            <!--reset btn
+            <div style="padding-left: 55%;">
+                <input class="btn btn-primary" id="resetBtn" onclick="resetForm()" type="reset" value="Reset" />
+            </div>-->
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+      <script src="scripts/temp.js"></script>
     
     
-              <!--output-->
-              <section>
-    <div class="container" id="cal4" style= "padding-left: 20%;">
-        <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-              <label  for="answerField5" class="col-form-label"> </label>
-            </div>
-            <div class="col-auto">
-              <output type="output1" id="answerField5" readonly class="form-control">Fahrenheit :</output>
-            </div>
-            <div class="col-auto">
-                <output type="output2" id="answerField6" readonly class="form-control">Celsius :</output>
-              </div>
-          </div>
-          <div style="padding-left: 33%;">
-            <input class="btn btn-primary" id="resetBtn" type="button" value="Reset"/>
-            </div>
-    
-        
-    </section>
     
 
     </main>
