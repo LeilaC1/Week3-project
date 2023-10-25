@@ -23,7 +23,7 @@ let yearlyInterest = Number(inputInterest.value);
 let yearlyLoanLength = Number(inputLoan.value);
 let principal = Number(inputPrincipal.value);
 let monthlyInterest = yearlyInterest / 100 / 12;
-let monthlyLoanLegnth = yearlyInterest * 12;
+let monthlyLoanLegnth = yearlyLoanLength * 12;
 
 // calculation, formula - M=P*i/1-(1=i)^-l
 
